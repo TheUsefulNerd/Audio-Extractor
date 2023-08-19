@@ -3,9 +3,9 @@ import os
 
 yt = YouTube(input("Paste the Youtube link here: "))
 
-vid = yt.streams.filter(only_audio=True).first()
+video = yt.streams.filter(only_audio=True).first()
 
-destination = "C:\\Users\\ADVAIT\\Music"
+destination = " " # Add the destination to save your your file
 
 output = vid.download(output_path=destination)
 
